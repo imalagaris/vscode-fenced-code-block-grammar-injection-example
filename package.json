@@ -20,19 +20,19 @@
   "contributes": {
     "languages": [
       {
-        "id": "superjs-injection"
+        "id": "sas-injection"
       }
     ],
     "grammars": [
       {
-        "language": "superjs-injection",
-        "scopeName": "markdown.superjs.codeblock",
+        "language": "sas-injection",
+        "scopeName": "markdown.sas.codeblock",
         "path": "./syntaxes/codeblock.json",
         "injectTo": [
           "text.html.markdown"
         ],
         "embeddedLanguages": {
-          "meta.embedded.block.superjs": "javascript"
+          "meta.embedded.block.sas": "sas"
         }
       }
     ]
