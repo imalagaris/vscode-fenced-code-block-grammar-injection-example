@@ -8,7 +8,7 @@
 	],
 	"repository": {
 		"superjs-code-block": {
-			"begin": "(^|\\G)(\\s*)(\\`{3,}|~{3,})\\s*(?i:(superjs)(\\s+[^`~]*)?$)",
+			"begin": "(^|\\G)(\\s*)(\\`{3,}|~{3,})\\s*(?i:(sas)(\\s+[^`~]*)?$)",
 			"name": "markup.fenced_code.block.markdown",
 			"end": "(^|\\G)(\\2|\\s{0,3})(\\3)\\s*$",
 			"beginCaptures": {
@@ -31,15 +31,15 @@
 				{
 					"begin": "(^|\\G)(\\s*)(.*)",
 					"while": "(^|\\G)(?!\\s*([`~]{3,})\\s*$)",
-					"contentName": "meta.embedded.block.superjs",
+					"contentName": "meta.embedded.block.sas",
 					"patterns": [
 						{
-							"include": "source.js"
+							"include": "source.sas"
 						}
 					]
 				}
 			]
 		}
 	},
-	"scopeName": "markdown.superjs.codeblock"
+	"scopeName": "markdown.sas.codeblock"
 }
